@@ -1,0 +1,22 @@
+﻿<div class="jumbotron">
+    <div class="container">
+        <h1 class="display-3">Hello!</h1>
+        <p>This is a close real-world example to use IdentityServer4 in a .NET Core and ASP.NET Core multi-instance environment.</p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <h2>Todo API</h2>
+            <p>The Todo API is an external service which provides sample Tasks items. On click on load the external API will get your access token and returns a json of tree items.</p>
+            <p><a class="btn btn-secondary" href="@(Url.RouteUrl("Tasks"))" role="button">Load tasks from external API &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Claim</h2>
+            <p>This pages shows your claims as key-value pair</p>
+            <p><a class="btn btn-secondary" href="@(Url.RouteUrl("Claims"))" role="button">Watch your claims &raquo;</a></p>
+        </div>
+    </div>
+</div>
+

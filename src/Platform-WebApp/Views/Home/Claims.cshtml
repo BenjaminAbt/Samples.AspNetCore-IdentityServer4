@@ -1,0 +1,24 @@
+﻿<div class="container" style="margin-top: 5rem;">
+
+    <h1>Your Claims - User: @(this.User.Identity.Name)</h1>
+
+    <table class="table">
+        <thead class="thead-inverse">
+            <tr>
+                <th>Type</th>
+                <th>Value</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var claim in User.Claims)
+            {
+                <tr>
+                    <td> @(claim.Type)</td>
+                    <td>@(claim.Value)</td>
+                </tr>
+
+            }
+        </tbody>
+    </table>
+
+</div>

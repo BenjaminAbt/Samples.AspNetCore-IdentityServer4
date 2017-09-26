@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <AssemblyName>BenjaminAbt.Samples.AspNetCore_IdentityServer.Platform_AdminConsoleClient</AssemblyName>
+    <RootNamespace>BenjaminAbt.Samples.AspNetCore_IdentityServer.Platform_AdminConsoleClient</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="IdentityModel" Version="2.12.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Platform-TasksApi.SDK\TodoApiSdk.csproj" />
+  </ItemGroup>
+
+</Project>

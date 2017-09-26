@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>BenjaminAbt.Samples.AspNetCore_IdentityServer.Platform_TodoApiSdk</AssemblyName>
+    <RootNamespace>BenjaminAbt.Samples.AspNetCore_IdentityServer.Platform_TodoApiSdk</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Platform-BaseApiSDK\BaseApiSDK.csproj" />
+  </ItemGroup>
+
+</Project>

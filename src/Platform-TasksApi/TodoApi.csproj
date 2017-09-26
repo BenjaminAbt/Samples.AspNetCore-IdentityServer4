@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <AssemblyName>BenjaminAbt.Samples.AspNetCore_IdentityServer.Platform_TodoApi</AssemblyName>
+    <RootNamespace>BenjaminAbt.Samples.AspNetCore_IdentityServer.Platform_TodoApi</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="wwwroot\**" />
+    <Content Remove="wwwroot\**" />
+    <EmbeddedResource Remove="wwwroot\**" />
+    <None Remove="wwwroot\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="IdentityServer4.AccessTokenValidation" Version="2.0.0-rc1" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Platform-TasksApi.SDK\TodoApiSdk.csproj" />
+  </ItemGroup>
+
+</Project>

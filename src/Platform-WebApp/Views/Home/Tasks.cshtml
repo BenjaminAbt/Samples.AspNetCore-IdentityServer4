@@ -1,0 +1,28 @@
+﻿@using BenjaminAbt.Samples.AspNetCore_IdentityServer.Platform_PortalWebApp.ViewModels
+@model TasksViewModel
+<div class="container" style="margin-top: 5rem;">
+
+    <h1>Tasks</h1>
+
+    <p>This page requests the TodoAPI first and shows the return here.</p>
+
+    <table class="table">
+        <thead class="thead-inverse">
+            <tr>
+                <th>#</th>
+                <th>Title</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var task in Model.TaskApiModels)
+            {
+                <tr>
+                    <td>@(task.Id)</td>
+                    <td>@(task.Title)</td>
+                    <td>@(task.Description)</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
