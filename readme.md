@@ -144,4 +144,4 @@ Released under [the MIT license](LICENSE).
 
 ## Versions
 
-- 1.0 (26.09.2017): Published
+- 1.0 (2017-09-26): Published
