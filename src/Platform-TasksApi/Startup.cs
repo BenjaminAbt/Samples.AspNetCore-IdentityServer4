@@ -10,7 +10,7 @@ namespace BenjaminAbt.Samples.AspNetCore_IdentityServer.Platform_TodoApi
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddAuthentication(IdentityServerAuthenticationDefaults.JwtAuthenticationScheme)
+            services.AddAuthentication("Bearer")
                     .AddIdentityServerAuthentication(options =>
                 {
 

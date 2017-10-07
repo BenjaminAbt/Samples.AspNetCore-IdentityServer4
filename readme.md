@@ -144,4 +144,5 @@ Released under [the MIT license](LICENSE).
 
 ## Versions
 
+- 1.1 (2017-10-07): Updated to stable release of IdentityServer 2.0
 - 1.0 (2017-09-26): Published
