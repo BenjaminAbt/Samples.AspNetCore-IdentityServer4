@@ -23,7 +23,7 @@ namespace BenjaminAbt.Samples.AspNetCore_IdentityServer.Platform_BaseApiSDK
             DiscoveryResponse discoveryResponse = await DiscoveryClient.GetAsync(_endpoint);
 
             TokenClient tokenClient = new TokenClient(discoveryResponse.TokenEndpoint, _clientId, _clientSecret);
-            TokenResponse response = tokenClient.RequestResourceOwnerPasswordAsync(username, password, targetClientId).Result;
+            TokenResponse response = await tokenClient.RequestResourceOwnerPasswordAsync(username, password, targetClientId);
 
             if (response.IsError)
             {
