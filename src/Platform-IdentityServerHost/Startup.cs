@@ -10,7 +10,7 @@ namespace BenjaminAbt.Samples.AspNetCore_IdentityServer.Platform_IdentityServerH
         {
             services.AddMvc();
             services.AddIdentityServer()
-                        .AddDeveloperSigningCredential(filename: "tempkey.rsa")
+                        .AddDeveloperSigningCredential() /* TODO: REPLACE THIS WITH YOUR SIGNING */
                         .AddInMemoryApiResources(IdentityServerSampleConfig.GetApiResources())
                         .AddInMemoryIdentityResources(IdentityServerSampleConfig.GetIdentityResources())
                         .AddInMemoryClients(IdentityServerSampleConfig.GetClients())
