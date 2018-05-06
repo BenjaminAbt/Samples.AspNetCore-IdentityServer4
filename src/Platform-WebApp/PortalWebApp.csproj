@@ -13,7 +13,7 @@
     <None Remove="wwwroot\**" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.7" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.5" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Platform-TasksApi.SDK\TodoApiSdk.csproj" />

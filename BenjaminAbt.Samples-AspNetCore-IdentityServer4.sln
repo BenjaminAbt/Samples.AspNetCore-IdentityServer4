@@ -31,7 +31,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityServerHost", "src\P
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_", "_", "{F5B03AF8-3213-4ACA-939C-A5BB256EF422}"
 	ProjectSection(SolutionItems) = preProject
-		global.json = global.json
 		readme.md = readme.md
 	EndProjectSection
 EndProject
